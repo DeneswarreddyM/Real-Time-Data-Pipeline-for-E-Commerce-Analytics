@@ -3,6 +3,7 @@ from pyspark.sql.functions import to_date, col, datediff, sum as _sum, avg
 
 mongodb_uri = "mongodb://localhost:27017/salesDB.sales_data"
 
+
 # Initialize SparkSession
 spark = SparkSession.builder \
     .appName("MongoDB to Tableau") \
